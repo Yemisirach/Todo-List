@@ -27,7 +27,7 @@
 
 <!-- DEPLOYMENT -->
 
-### This project goes live [here](https://yemisirach.github.io/todo-list/) 🚀 .
+### This project goes live [here](https://yemisirach.github.io/Todo-List/) 🚀 .
 
 <br>
 
@@ -51,7 +51,7 @@
 - **CSS**
 - **JavaScript**
 
-<a href="https://yemisirach.github.io/todo-list/">Live Demo link</a>
+<a href="https://yemisirach.github.io/Todo-List/">Live Demo link</a>
 
 <!-- GETTING STARTED -->
 
@@ -64,7 +64,7 @@ To get a local copy up and running, follow these steps.
 In order to run this project you need to copy the link of this Repository.
 
 ```sh
- https://github.com/Yemisirach/todo-lis.git
+ https://github.com/Yemisirach/Todo-lis.git
 ```
 
 <br>
@@ -75,7 +75,7 @@ Clone this repository to your desired directory using the command:
 
 ```sh
   cd your-folder
-  git clone https://github.com/Yemisirach/todo-list.git
+  git clone https://github.com/Yemisirach/Todo-list.git
 ```
 
 <br>
