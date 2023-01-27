@@ -1,23 +1,22 @@
-import "./style.css";
-import _ from "lodash";
+import './style.css';
 
-const ToDoTask = document.getElementById("ToDoTask");
+const ToDoTask = document.getElementById('ToDoTask');
 
 const toDoslist = [
   {
-    description: "wash car",
-    completed: "false",
-    index: "1",
+    description: 'wash car',
+    completed: 'false',
+    index: '1',
   },
   {
-    description: "complet project",
-    completed: "false",
-    index: "2",
+    description: 'complet project',
+    completed: 'false',
+    index: '2',
   },
   {
-    description: "go to Gym",
-    completed: "false",
-    index: "3",
+    description: 'go to Gym',
+    completed: 'false',
+    index: '3',
   },
 ];
 
@@ -36,8 +35,8 @@ ToDoTask.innerHTML = `
 
 function showtodos() {
   toDoslist.forEach((toDo) => {
-    const listItem = document.createElement("li");
-    listItem.classList.add("task");
+    const listItem = document.createElement('li');
+    listItem.classList.add('task');
     listItem.innerHTML = ` 
       <input type="checkbox">
       <label>${toDo.description}</label>
