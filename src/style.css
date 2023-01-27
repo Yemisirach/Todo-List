@@ -1,0 +1,84 @@
+body {
+  background-color: bisque;
+  color: rgb(18, 17, 17);
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 15px;
+  margin: 11px 0 0;
+  color: rgb(51, 49, 49);
+}
+
+.todolist-header,
+form {
+  display: flex;
+  justify-content: space-between;
+}
+
+#outer-cont {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+
+article,
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#toDoContainer {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 4px 11px 16px rgb(217, 216, 216);
+  background-color: lightgray;
+}
+
+#toDoContainer p {
+  cursor: pointer;
+  margin-top: 0;
+}
+
+#ToDoTask {
+  width: 350px;
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
+
+.todo-input {
+  outline: none;
+  border: navajowhite !important;
+  background-color: transparent;
+  width: 85%;
+  appearance: none;
+  font-style: italic;
+}
+
+#list {
+  width: 93%;
+  list-style: none;
+  padding: 0 19px;
+  margin-top: 0;
+  background-color: white;
+}
+
+.dots {
+  float: right;
+}
+
+hr {
+  width: 100%;
+}
