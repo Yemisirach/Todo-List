@@ -24,14 +24,14 @@ function showTodo(filter) {
         liTag += `<li class="task">
         <article class="task-manager">
                           <label for="${id}">
-                              <input onclick="updateStatus(this)" class="inputTodo" type="checkbox" id="${id}" ${completed}>
+                              <input onclick="updateStatus(this)" type="checkbox" id="${id}" ${completed}>
                               <p class="${completed}">${todo.name}</p>
                           </label>
                           <div class="menu">
                               <i onclick="showMenu(this)" class="uil uil-ellipsis-h"></i>
                               <ul class="task-menu">
-                                  <li onclick='editTask(${id}, "${todo.name}")'><i class="uil uil-pen"></i></li>
-                                  <li onclick='deleteTask(${id}, "${filter}")'><i class="uil uil-trash"></i></li>
+                                  <li class="editTask" onclick='editTask(${id}, "${todo.name}")'><i class="uil uil-pen"></i></li>
+                                  <li class="deleteTask" onclick='deleteTask(${id}, "${filter}")'><i class="uil uil-trash"></i></li>
                               </ul>
                           </div>
                       </li>
@@ -49,7 +49,7 @@ function showTodo(filter) {
     ? taskBox.classList.add("overflow")
     : taskBox.classList.remove("overflow");
 }
-showTodo(all);
+showTodo();
 
 function showMenu(selectedTask) {
   let menuDiv = selectedTask.parentElement.lastElementChild;
