@@ -3,15 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
     <title>To Do List</title>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
   </head>
   <body>
+    <!-- <h1>Hello webpack!</h1> -->
     <section id="outer-cont">
-      <section id="toDoContainer">
-        <ul id="ToDoTask"></ul>
-        <p>Clear all completed</p>
-      </section>
+      <div class="wrapper" id="toDoContainer">
+        <article>
+          <h2>Today's todo</h2>
+        </article>
+        <hr />
+        <div class="todo-input">
+          <input type="text" id="todo" placeholder="Add a new task..." />
+          <li class="uil-refreshe">
+            <iconify-icon icon="bx:refresh"></iconify-icon>
+          </li>
+        </div>
+        <hr />
+        <div class="controls">
+          <div class="filters">
+            <span class="active" id="all">All</span>
+            <span id="pending">Pending</span>
+            <span id="completed">Completed</span>
+          </div>
+        </div>
+        <ul class="task-box"></ul>
+        <div id="clear">
+          <button class="clear">Clear All completed</button>
+        </div>
+      </div>
     </section>
   </body>
 </html>

@@ -1,17 +1,72 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
-    <title>Wbpack Exercise</title>
   <script defer src="main.js"></script></head>
   <body>
     <section id="outer-cont">
-      <section id="container">
-        <ul id="list"></ul>
-        <p>Clear all completed</p>
-      </section>
+      <div class="wrapper" id="toDoContainer">
+        <article>
+          <h2>Today's todo</h2>
+        </article>
+        <hr />
+        <div class="todo-input">
+          <input type="text" id="todo" placeholder="Add a new task..." />
+          <li class="uil-refreshe">
+            <iconify-icon icon="bx:refresh"></iconify-icon>
+          </li>
+        </div>
+        <hr />
+        <ul class="task-box"></ul>
+        <div id="clear">
+          <button class="clear">Clear All completed</button>
+        </div>
+      </div>
     </section>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list</title>
+  </head>
+  <body>
+    <main>
+      <!-- Todo Section -->
+      <section class="section-todo">
+        <article class="todo-container">
+          <div class="todo-header">
+            <h1 class="todo-title">Today's To Do</h1>
+            <i class="fa-solid fa-arrows-rotate"></i>
+          </div>
+          <form id="todo-form" class="add-todo-form">
+            <input
+              class="add-input"
+              type="text"
+              id="task"
+              name="task"
+              placeholder="Add to your list..."
+            />
+            <i id="input-icon" class="fa-solid fa-arrow-turn-down"></i>
+          </form>
+          <ul id="todos-container" class="todo-list-container">
+            <!-- Dynamic Todo list goes here -->
+          </ul>
+          <div class="clear-btn-wrapper">
+            <button class="clear-btn">Clear all completed</button>
+          </div>
+        </article>
+      </section>
+    </main>
   </body>
 </html>
