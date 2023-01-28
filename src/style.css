@@ -64,7 +64,7 @@ label {
   align-items: center;
 }
 
-.article label p.checked {
+article label p.checked {
   text-decoration: line-through;
 }
 
