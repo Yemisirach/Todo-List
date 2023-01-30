@@ -21,7 +21,9 @@
         <div class="todo-input">
           <input type="text" id="todo" placeholder="Add a new task..." />
           <li class="uil-refreshe refreshe">
-            <iconify-icon icon="bx:refresh"></iconify-icon>
+            <button id="add">
+              <iconify-icon icon="bx:refresh"></iconify-icon>
+            </button>
           </li>
         </div>
         <hr />
@@ -32,9 +34,9 @@
             <span id="completed">Completed</span>
           </div>
         </div>
-        <ul class="task-box"></ul>
+        <ul id="task-list"></ul>
         <div id="clear">
-          <button class="clear">Clear All completed</button>
+          <button id="clearAll">Clear All completed</button>
         </div>
       </div>
     </section>
