@@ -9,9 +9,9 @@ body {
 
 .controls,
 li {
-  display: flex;
+  /* display: flex; */
   align-items: center;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .controls {
@@ -64,7 +64,7 @@ label {
   align-items: center;
 }
 
-article label p.checked {
+input p.checkbox {
   text-decoration: line-through;
 }
 
@@ -81,7 +81,7 @@ li {
 
 .todo-heder {
   width: 400px;
-  margin-left: 14%;
+  margin-left: 7%;
 }
 
 h1 {
@@ -100,20 +100,17 @@ label input {
   margin: 1rem;
 }
 
-.todo-input input {
-  height: 25px;
-  width: 22.5rem;
-  margin-left: 2%;
+#todo {
+  height: 30px;
+  width: 21rem;
+  margin: auto;
+  margin-left: 6%;
 }
 
-.task-box .task {
-  list-style: none;
-}
-
-.task-box {
+.task-list {
   margin: 0;
   padding: 0;
-  width: 400px;
+  display: flex;
 }
 
 .task label {
@@ -121,38 +118,35 @@ label input {
   align-items: center;
 }
 
-.task-manager {
-  height: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0.5rem;
-  width: 370px;
-}
-
 hr {
   background: rgb(252, 251, 251);
   width: 100%;
-}
-
-.uil-ellipsis-v {
-  display: block;
 }
 
 .task .menu {
   cursor: pointer;
   position: relative;
 }
+p {
+  margin: 0;
+  padding-left: 15px;
+}
 
 .task-menu {
   display: flex;
   justify-content: space-between;
+  margin: 5%;
+}
+article {
+  display: flex;
+  position: relative;
 }
 
-.menu .task-menu {
-  position: absolute;
-  right: -5px;
-  top: -10px;
+.menulist {
+  width: 50px;
+  cursor: pointer;
+  left: -40px;
+  top: -29px;
   z-index: 2;
   border-radius: 4px;
   padding: 5px 0;
@@ -160,24 +154,30 @@ hr {
   transform: scale(0);
 }
 
-.menu:hover .task-menu {
+.uil-ellipsis-v:hover .menulist {
   transform: scale(1);
+  position: relative;
+}
+
+.menulist button {
+  cursor: pointer;
 }
 
 .task-menu li {
   height: 25px;
   font-size: 16px;
-  margin-bottom: 2px;
-  justify-content: flex-start;
+  align-items: center;
+}
+button {
+  margin: 10%;
+}
+.uil-ellipsis-v {
+  margin-left: 90px;
 }
 
-.task-menu li:hover {
-  background-color: antiquewhite;
-}
-
-.task-menu li:last-child {
+/* .task-menu li:last-child {
   margin-bottom: 0;
-}
+} */
 
 .task-menu li i {
   padding: 8px;
@@ -207,7 +207,7 @@ h2 {
 }
 
 #toDoContainer {
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -237,10 +237,13 @@ ul {
 }
 
 .uil-refreshe {
+  cursor: pointer;
   left: -50px;
   height: 20px;
-  padding-top: 0.42rem;
   background-color: transparent;
-  cursor: pointer;
   align-items: center;
+}
+.list {
+  display: flex;
+  justify-content: flex-start;
 }

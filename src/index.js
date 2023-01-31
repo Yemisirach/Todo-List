@@ -1,3 +1,5 @@
+import "./style.css";
+
 const addButton = document.getElementById("add");
 const input = document.getElementById("todo");
 const listContainer = document.getElementById("task-list");
@@ -6,7 +8,7 @@ let newTodo = "";
 const toDoList = [];
 
 const handleCheckbox = (e) => {
-  index = Number(e.target.parentNode.getAttribute("id"));
+  const index = Number(e.target.parentNode.getAttribute("id"));
   console.log(index);
   toDoList[index - 1].completed = !toDoList[index - 1].completed;
   console.log(toDoList);
@@ -69,25 +71,38 @@ const handleAddTask = (name = "", completed = false, newTask = true) => {
   const index = toDoList.length + 1;
   toDoList.push({ name, completed, index });
   const deleteButton = document.createElement("button");
-  deleteButton.textContent = "Delete";
+  deleteButton.setAttribute("class", "uil uil-trash");
   deleteButton.addEventListener("click", deleteTask);
   const editButton = document.createElement("button");
-  editButton.textContent = "Edit";
+  editButton.setAttribute("class", "uil uil-pen");
   editButton.addEventListener("click", editTask);
+  const menu = document.createElement("li");
+  menu.setAttribute("class", "uil uil-ellipsis-v");
+  const taskmenu = document.createElement("article");
+  taskmenu.setAttribute("class", "menulist");
   const checkbox = document.createElement("input");
   checkbox.setAttribute("type", "checkbox");
+  checkbox.setAttribute("class", "checkbox");
   checkbox.checked = completed;
   checkbox.addEventListener("change", handleCheckbox);
   const task = document.createElement("div");
+  task.setAttribute("class", "task-menu");
   const li = document.createElement("li");
   li.setAttribute("id", toDoList.length);
+  li.setAttribute("class", "list");
+  const horizontal = document.createElement("hr");
   const p = document.createElement("p");
+
   p.textContent = name;
+  listContainer.appendChild(horizontal);
   li.appendChild(checkbox);
   li.appendChild(p);
   task.appendChild(li);
-  task.appendChild(deleteButton);
-  task.appendChild(editButton);
+  taskmenu.appendChild(deleteButton);
+  taskmenu.appendChild(editButton);
+  task.appendChild(taskmenu);
+  menu.appendChild(taskmenu);
+  task.appendChild(menu);
   listContainer.appendChild(task);
   input.value = "";
   newTodo = "";
