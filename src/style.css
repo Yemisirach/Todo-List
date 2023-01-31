@@ -9,9 +9,7 @@ body {
 
 .controls,
 li {
-  /* display: flex; */
   align-items: center;
-  /* justify-content: space-between; */
 }
 
 .controls {
@@ -127,6 +125,7 @@ hr {
   cursor: pointer;
   position: relative;
 }
+
 p {
   margin: 0;
   padding-left: 15px;
@@ -137,6 +136,7 @@ p {
   justify-content: space-between;
   margin: 5%;
 }
+
 article {
   display: flex;
   position: relative;
@@ -159,6 +159,10 @@ article {
   position: relative;
 }
 
+button {
+  margin: 10%;
+}
+
 .menulist button {
   cursor: pointer;
 }
@@ -168,19 +172,19 @@ article {
   font-size: 16px;
   align-items: center;
 }
-button {
-  margin: 10%;
-}
+
 .uil-ellipsis-v {
   margin-left: 90px;
 }
 
-/* .task-menu li:last-child {
-  margin-bottom: 0;
-} */
-
 .task-menu li i {
   padding: 8px;
+}
+
+#save input {
+  height: 20px;
+  align-items: center;
+  margin-top: 7%;
 }
 
 #clear {
@@ -243,6 +247,7 @@ ul {
   background-color: transparent;
   align-items: center;
 }
+
 .list {
   display: flex;
   justify-content: flex-start;
