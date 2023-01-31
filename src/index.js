@@ -4,7 +4,6 @@ const addButton = document.getElementById("add");
 const input = document.getElementById("todo");
 const listContainer = document.getElementById("task-list");
 const clearAll = document.getElementById("clearAll");
-const filters = document.querySelectorAll(".filters span");
 let newTodo = "";
 const toDoList = [];
 
@@ -60,14 +59,6 @@ const editTask = (e) => {
   li.replaceChild(div, p);
   localStorage.setItem("taskList", JSON.stringify(toDoList));
 };
-
-filters.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    document.querySelector("span.active").classList.remove("active");
-    btn.classList.add("active");
-    showTodo(btn.id);
-  });
-});
 
 const handleAddTask = (name = "", completed = false, newTask = true) => {
   if (!name) return;
