@@ -1,9 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
 body {
   background-color: bisque;
-  color: rgb(18, 17, 17);
   overflow: hidden;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.controls,
+li {
+  align-items: center;
+}
+
+.controls {
+  padding: 18px 25px;
+  border-bottom: 1px solid #ccc;
+}
+
+.filters span {
+  margin: 0 8px;
+  font-size: 17px;
+  color: #444;
+  cursor: pointer;
+}
+
+.filters span:first-child {
+  margin-left: 0;
+}
+
+.filters span.active {
+  color: #3c87ff;
+}
+
+.controls .clear-btn {
+  border: none;
+  opacity: 0.6;
+  outline: none;
+  pointer-events: none;
+  transition: transform 0.25s ease;
+  background: linear-gradient(135deg, #1798fb 0%, #2d5cfe 100%);
+  color: #fff;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 7px 13px;
+  border-radius: 4px;
+  letter-spacing: 0.3px;
+}
+
+.clear.active {
+  opacity: 0.9;
+  pointer-events: auto;
+}
+
+.clear:active {
+  transform: scale(0.93);
+}
+
+label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+input p.checkbox {
+  text-decoration: line-through;
+}
+
+li {
+  list-style: none;
+}
+
+.wrapper {
+  max-width: 400px;
+  margin: 130px auto;
+  background-color: white;
+  border: 7px;
+}
+
+.todo-heder {
+  width: 400px;
+  margin-left: 7%;
+}
+
+h1 {
+  padding: 1rem 0 0 1rem;
+  font-size: 17px;
+  color: rgb(42, 37, 37);
+}
+
+input {
+  border: none;
+  padding: 5px;
+  background-color: transparent;
+}
+
+label input {
+  margin: 1rem;
+}
+
+#todo {
+  height: 30px;
+  width: 21rem;
+  margin: auto;
+  margin-left: 6%;
+}
+
+.task-list {
   margin: 0;
   padding: 0;
+  display: flex;
+}
+
+.task label {
+  display: flex;
+  align-items: center;
+}
+
+hr {
+  background: rgb(252, 251, 251);
+  width: 100%;
+}
+
+.task .menu {
+  cursor: pointer;
+  position: relative;
+}
+
+p {
+  margin: 0;
+  padding-left: 15px;
+}
+
+.task-menu {
+  display: flex;
+  justify-content: space-between;
+  margin: 5%;
+}
+
+article {
+  display: flex;
+  position: relative;
+}
+
+.menulist {
+  width: 50px;
+  cursor: pointer;
+  left: -40px;
+  top: -29px;
+  z-index: 2;
+  border-radius: 4px;
+  padding: 5px 0;
+  box-shadow: 0 0 6px rgb(0, 0, 0, 0.15);
+  transform: scale(0);
+}
+
+.uil-ellipsis-v:hover .menulist {
+  transform: scale(1);
+  position: relative;
+}
+
+button {
+  margin: 10%;
+}
+
+.menulist button {
+  cursor: pointer;
+}
+
+.task-menu li {
+  height: 25px;
+  font-size: 16px;
+  align-items: center;
+}
+
+.uil-ellipsis-v {
+  margin-left: 90px;
+}
+
+.task-menu li i {
+  padding: 8px;
+}
+
+#save input {
+  height: 20px;
+  align-items: center;
+  margin-top: 7%;
+}
+
+#clear {
+  display: flex;
+  justify-content: center;
+}
+
+#clear button {
+  cursor: pointer;
+  width: 400px;
+  height: 55px;
+  border: 1px;
+  font-size: 16px;
+  font-weight: 300;
+  color: rgb(36, 31, 26);
 }
 
 h2 {
@@ -14,29 +210,8 @@ h2 {
   color: rgb(51, 49, 49);
 }
 
-.todolist-header,
-form {
-  display: flex;
-  justify-content: space-between;
-}
-
-#outer-cont {
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-  align-items: center;
-}
-
-article,
-form {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 #toDoContainer {
-  width: 400px;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -49,11 +224,6 @@ form {
   margin-top: 0;
 }
 
-#ToDoTask {
-  width: 350px;
-  list-style: none;
-}
-
 ul {
   padding: 0;
 }
@@ -61,24 +231,24 @@ ul {
 .todo-input {
   outline: none;
   border: navajowhite !important;
+  border-bottom: none;
   background-color: transparent;
-  width: 85%;
+  width: 90%;
   appearance: none;
   font-style: italic;
+  display: flex;
+  justify-content: space-between;
 }
 
-#list {
-  width: 93%;
-  list-style: none;
-  padding: 0 19px;
-  margin-top: 0;
-  background-color: white;
+.uil-refreshe {
+  cursor: pointer;
+  left: -50px;
+  height: 20px;
+  background-color: transparent;
+  align-items: center;
 }
 
-.dots {
-  float: right;
-}
-
-hr {
-  width: 100%;
+.list {
+  display: flex;
+  justify-content: flex-start;
 }
