@@ -1,11 +1,12 @@
 import './style.css';
+import clearCompleted from './module/clearAll.js';
 
 const addButton = document.getElementById('add');
 const input = document.getElementById('todo');
 const listContainer = document.getElementById('task-list');
 const clearAll = document.getElementById('clearAll');
 let newTodo = '';
-const toDoList = [];
+let toDoList = [];
 
 const handleCheckbox = (e) => {
   const index = Number(e.target.parentNode.getAttribute('id'));
@@ -105,8 +106,6 @@ const handleAddTask = (name = '', completed = false, newTask = true) => {
   }
 };
 
-// this is were the java script code sarts to execute
-
 input.addEventListener('input', (e) => {
   newTodo = e.target.value;
 });
@@ -118,8 +117,11 @@ input.addEventListener('keypress', (e) => {
 });
 
 clearAll.addEventListener('click', () => {
-  localStorage.setItem('taskList', JSON.stringify([]));
+  const newLists = clearCompleted(toDoList);
+  toDoList = [];
+  localStorage.setItem('taskList', JSON.stringify(newLists));
   listContainer.innerHTML = '';
+  newLists.forEach((task) => handleAddTask(task.name, task.completed, false));
 });
 document.addEventListener('DOMContentLoaded', () => {
   const initialList = localStorage.getItem('taskList')
