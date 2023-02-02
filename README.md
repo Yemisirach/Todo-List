@@ -27,7 +27,7 @@
 
 <!-- DEPLOYMENT -->
 
-### This project goes live [here](https://yemisirach.github.io/Todo-List/) 🚀 .
+### This project goes live [here](https://yemisirach.github.io/Todo-List/dist/) 🚀 .
 
 <br>
 
@@ -51,7 +51,7 @@
 - **CSS**
 - **JavaScript**
 
-<a href="https://yemisirach.github.io/Todo-List/">Live Demo link</a>
+<a href="https://yemisirach.github.io/Todo-List/dist/">Live Demo link</a>
 
 <!-- GETTING STARTED -->
 
