@@ -1,100 +1,32 @@
-# Todo-List
+# To-Do-list.
 
-<a name="readme-top"></a>
+### Objectives of this project
 
-<div align="center">
+- Use webpack to bundle JavaScript.
+- Learn how to use proper ES6 syntax.
+- Use ES6 modules to write modular JavaScript.
 
+## Built With
 
-</div>
+- HTML
+- CSS
+- JavaScript(ES6)
+- WebPack
 
-<!-- TABLE OF CONTENTS -->
+## Live Demo
 
-# 📗 Table of Contents
+[Go Live](https://yemisirach.github.io/Todo-List/dist/"> 🙂
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Usage](#usage)
-- [👥 Authors](#authors)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [📝 License](#license)
+## Getting Started
 
-<br>
+1. Open [main branch](https://github.com/Yemisirach/Todo-List.git)
+2. Open VSCode or terminal and navigate to the folder where you would like to clone the project.
+3. Type "pwd" to see your working directory.
+4. [clone repository](git@github.com:Yemisirach/Todo-List.git)(git clone "branch-link")
+5. run "npm start" to start the website on local server
+6. Enjoy 😎
 
-<!-- DEPLOYMENT -->
-
-### This project goes live [here](https://yemisirach.github.io/Todo-List/dist/) 🚀 .
-
-<br>
-
-<!-- DEPLOYMENT -->
-<!-- ### Have a look at the project's video presentation [here](https://www.loom.com/share/1f7de2b9345a4d3988c6327952899d30) 📽️ . -->
-
-<br>
-
-<!-- PROJECT DESCRIPTION -->
-
-# 📖 [To Do List] <a name="about-project"></a>
-
-**To do list** is a pair programming project for saving book details like an online library.
-
-## 🛠 Built With <a name="built-with"></a>
-
--Client
-##Create a to do list
-
-- **HTML**
-- **CSS**
-- **JavaScript**
-
-<a href="https://yemisirach.github.io/Todo-List/dist/">Live Demo link</a>
-
-<!-- GETTING STARTED -->
-
-## 💻 Getting Started <a name="getting-started"></a>
-
-To get a local copy up and running, follow these steps.
-
-### Prerequisites
-
-In order to run this project you need to copy the link of this Repository.
-
-```sh
- https://github.com/Yemisirach/Todo-lis.git
-```
-
-<br>
-
-### Setup
-
-Clone this repository to your desired directory using the command:
-
-```sh
-  cd your-folder
-  git clone https://github.com/Yemisirach/Todo-list.git
-```
-
-<br>
-
-### Usage
-
-Kindly go ahead and give this project a massage but do not forget to give a detailed description in your pull request.
-
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- AUTHORS -->
+## Authors
 
 ## 👥 Yemisirach
 
@@ -110,30 +42,26 @@ Example command:
 - [ ] **[Multi Pages]**
 - [ ] **[Server Storage]**
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## Show your support
 
-<!-- SUPPORT -->
+Give a ⭐️ if you like this project!
 
-## ⭐️ Show your support <a name="support"></a>
+## Acknowledgments
 
-If you like this project kindly support by suggesting changed by forking and pull requests
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGEMENTS -->
-
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-We would like to thank everyone who inspired us to learn programming. Regards to the whole Microverse team, Peers, and family supporting.
-
-<!-- <br>A massive Thank You to [Cindy Shin](https://www.behance.net/adagio07) who is the original designer of this [design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) -->
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LICENSE -->
+- Microverse for amusing support and guidance.
+- Microverse code reviewers.
 
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+
+
+
+
+
+
