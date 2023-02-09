@@ -15,7 +15,7 @@
 
 ## Live Demo
 
-[Go Live]("https://yemisirach.github.io/Todo-List/dist/"> 🙂
+[Go Live](https://yemisirach.github.io/Todo-List/dist/) 
 
 ## Getting Started
 
