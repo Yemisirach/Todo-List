@@ -13,6 +13,7 @@
 - CSS
 - JavaScript(ES6)
 - WebPack
+- jest library
 
 ## Live Demo
 
