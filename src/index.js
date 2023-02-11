@@ -1,10 +1,10 @@
 import "./style.css";
 import clearCompleted from "./module/clearAll.js";
 
-const addButton = document.getElementById("add");
-const input = document.getElementById("todo");
-const listContainer = document.getElementById("task-list");
-const clearAll = document.getElementById("clearAll");
+let addButton = document.getElementById("add");
+let input = document.getElementById("todo");
+let listContainer = document.getElementById("task-list");
+let clearAll = document.getElementById("clearAll");
 let newTodo = "";
 let toDoList = [];
 
@@ -87,8 +87,8 @@ const handleAddTask = (name = "", completed = false, newTask = true) => {
   li.setAttribute("class", "list");
   const horizontal = document.createElement("hr");
   const p = document.createElement("p");
-
   p.textContent = name;
+
   li.appendChild(checkbox);
   li.appendChild(p);
   task.appendChild(li);
@@ -102,29 +102,43 @@ const handleAddTask = (name = "", completed = false, newTask = true) => {
   input.value = "";
   newTodo = "";
   if (newTask) {
+    // console.log("setting an item with", newTask);
     localStorage.setItem("taskList", JSON.stringify(toDoList));
   }
 };
 
-input.addEventListener("input", (e) => {
-  newTodo = e.target.value;
-  console.log(newTodo);
-});
+function dom() {
+  // console.log("function is called");
+  addButton = document.getElementById("add");
+  input = document.getElementById("todo");
+  listContainer = document.getElementById("task-list");
+  clearAll = document.getElementById("clearAll");
+}
 
-addButton.addEventListener("click", () => handleAddTask(newTodo));
-
-input.addEventListener("keypress", (e) => {
-  if (e.key === "Enter") handleAddTask(newTodo);
-});
-
-clearAll.addEventListener("click", () => {
-  const newLists = clearCompleted(toDoList);
-  toDoList = [];
-  localStorage.setItem("taskList", JSON.stringify(newLists));
-  listContainer.innerHTML = "";
-  newLists.forEach((task) => handleAddTask(task.name, task.completed, false));
-});
 document.addEventListener("DOMContentLoaded", () => {
+  addButton = document.getElementById("add");
+  input = document.getElementById("todo");
+  listContainer = document.getElementById("task-list");
+  clearAll = document.getElementById("clearAll");
+
+  input.addEventListener("input", (e) => {
+    newTodo = e.target.value;
+    console.log(newTodo);
+  });
+
+  addButton.addEventListener("click", () => handleAddTask(newTodo));
+
+  input.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") handleAddTask(newTodo);
+  });
+
+  clearAll.addEventListener("click", () => {
+    const newLists = clearCompleted(toDoList);
+    toDoList = [];
+    localStorage.setItem("taskList", JSON.stringify(newLists));
+    listContainer.innerHTML = "";
+    newLists.forEach((task) => handleAddTask(task.name, task.completed, false));
+  });
   const initialList = localStorage.getItem("taskList")
     ? JSON.parse(localStorage.getItem("taskList"))
     : [];
@@ -132,3 +146,10 @@ document.addEventListener("DOMContentLoaded", () => {
     handleAddTask(task.name, task.completed, false)
   );
 });
+
+module.exports = {
+  deleteTask,
+  handleAddTask,
+  clearCompleted,
+  dom,
+};
