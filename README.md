@@ -11,17 +11,21 @@
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Usage](#usage)
-- [👥 Authors](#authors)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [📝 License](#license)
+- [Todo-List](#todo-list)
+- [📗 Table of Contents](#-table-of-contents)
+    - [This project goes live here 🚀 .](#this-project-goes-live-here--)
+- [📖 \[To Do List\] ](#-to-do-list-)
+  - [🛠 Built With ](#-built-with-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Usage](#usage)
+  - [👥 Yemisirach](#-yemisirach)
+  - [👥 Kingno3l](#-kingno3l)
+  - [🔭 Future Features ](#-future-features-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
 <br>
 
@@ -101,6 +105,11 @@ Example command:
 - GitHub: [@githubhandle](https://github.com/Yemisirach)
 - Twitter: [@twitterhandle](https://twitter.com/TamiratYemisrach)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/yemisirach)
+
+## 👥 Kingno3l
+
+- GitHub: [@githubhandle](https://github.com/kingno3l)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/kingno3l)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
