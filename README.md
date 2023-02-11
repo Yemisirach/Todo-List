@@ -1,7 +1,7 @@
 # To-Do-list.
 
 ### Objectives of this project
--test by using jest library
+- test by using jest library
 - Use webpack to bundle JavaScript.
 - Learn how to use proper ES6 syntax.
 - Use ES6 modules to write modular JavaScript.
