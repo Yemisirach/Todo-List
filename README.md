@@ -20,8 +20,7 @@
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Usage](#usage)
-  - [👥 Yemisirach](#-yemisirach)
-  - [👥 Kingno3l](#-kingno3l)
+  - [👥 Yemisirach and Kingno3l](#-yemisirach-and-kingno3l)
   - [🔭 Future Features ](#-future-features-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
@@ -100,13 +99,11 @@ Example command:
 
 <!-- AUTHORS -->
 
-## 👥 Yemisirach
+## 👥 Yemisirach and Kingno3l
 
 - GitHub: [@githubhandle](https://github.com/Yemisirach)
 - Twitter: [@twitterhandle](https://twitter.com/TamiratYemisrach)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/yemisirach)
-
-## 👥 Kingno3l
 
 - GitHub: [@githubhandle](https://github.com/kingno3l)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/kingno3l)
