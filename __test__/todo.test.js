@@ -1,6 +1,4 @@
-import indexModule from "../src/index.js";
-
-import { handleAddTask, dom } from "./src/index.js";
+import { handleAddTask, dom } from "../src/index.js";
 
 document.body.innerHTML = `<body>
 <section id="outer-cont">
