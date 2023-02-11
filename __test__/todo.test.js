@@ -1,4 +1,4 @@
-import indexModule from "../src/index.js";
+import indexModule from '../src/index.js';
 
 const { handleAddTask } = indexModule;
 const { dom } = indexModule;
@@ -25,57 +25,57 @@ document.body.innerHTML = `<body>
   </div>
 </section>
 </body>`;
-describe("Add task list and local Storage", () => {
+describe('Add task list and local Storage', () => {
   dom();
-  test("check local Storage is null", () => {
-    expect(JSON.parse(localStorage.getItem("taskList"))).toEqual(null);
+  test('check local Storage is null', () => {
+    expect(JSON.parse(localStorage.getItem('taskList'))).toEqual(null);
   });
 
-  test("check add task ", () => {
-    handleAddTask("yemi", "false", true);
-    handleAddTask("yemi", "false", true);
-    handleAddTask("yemi", "false", true);
-    handleAddTask("yemi", "false", true);
-    handleAddTask("yemi", "false", true);
-    expect(JSON.parse(localStorage.getItem("taskList")).length).toBe(5);
+  test('check add task ', () => {
+    handleAddTask('yemi', 'false', true);
+    handleAddTask('yemi', 'false', true);
+    handleAddTask('yemi', 'false', true);
+    handleAddTask('yemi', 'false', true);
+    handleAddTask('yemi', 'false', true);
+    expect(JSON.parse(localStorage.getItem('taskList')).length).toBe(5);
   });
 });
-describe("Assert edit task ", () => {
-  it("assert edit", () => {
-    handleAddTask("yemi", "false", true);
-    const tasks = document.querySelector("#task-list");
-    const editIcon = tasks.querySelector(".uil-pen");
-    let p = tasks.querySelector("p");
-    expect(p.textContent).toBe("yemi");
+describe('Assert edit task ', () => {
+  it('assert edit', () => {
+    handleAddTask('yemi', 'false', true);
+    const tasks = document.querySelector('#task-list');
+    const editIcon = tasks.querySelector('.uil-pen');
+    let p = tasks.querySelector('p');
+    expect(p.textContent).toBe('yemi');
 
     editIcon.click();
-    const editor = tasks.querySelector("#save");
-    const input = editor.querySelector("input");
-    const saveButton = editor.querySelector("button");
-    input.value = "new value";
+    const editor = tasks.querySelector('#save');
+    const input = editor.querySelector('input');
+    const saveButton = editor.querySelector('button');
+    input.value = 'new value';
     saveButton.click();
-    p = tasks.querySelector("p");
-    expect(p.textContent).toBe("new value");
+    p = tasks.querySelector('p');
+    expect(p.textContent).toBe('new value');
   });
 });
 
-describe("DOM for Add and delete task", () => {
-  test("Delet task from task list", () => {
-    const tasks = document.querySelector("#task-list");
-    let deleteButton = tasks.querySelector(".uil-trash");
+describe('DOM for Add and delete task', () => {
+  test('Delet task from task list', () => {
+    const tasks = document.querySelector('#task-list');
+    let deleteButton = tasks.querySelector('.uil-trash');
     deleteButton.click();
-    expect(JSON.parse(localStorage.getItem("taskList")).length).toBe(5);
-    deleteButton = tasks.querySelector(".uil-trash");
+    expect(JSON.parse(localStorage.getItem('taskList')).length).toBe(5);
+    deleteButton = tasks.querySelector('.uil-trash');
     deleteButton.click();
-    expect(JSON.parse(localStorage.getItem("taskList")).length).toBe(4);
-    deleteButton = tasks.querySelector(".uil-trash");
+    expect(JSON.parse(localStorage.getItem('taskList')).length).toBe(4);
+    deleteButton = tasks.querySelector('.uil-trash');
     deleteButton.click();
-    expect(JSON.parse(localStorage.getItem("taskList")).length).toBe(3);
-    deleteButton = tasks.querySelector(".uil-trash");
+    expect(JSON.parse(localStorage.getItem('taskList')).length).toBe(3);
+    deleteButton = tasks.querySelector('.uil-trash');
     deleteButton.click();
-    expect(JSON.parse(localStorage.getItem("taskList")).length).toBe(2);
-    deleteButton = tasks.querySelector(".uil-trash");
+    expect(JSON.parse(localStorage.getItem('taskList')).length).toBe(2);
+    deleteButton = tasks.querySelector('.uil-trash');
     deleteButton.click();
-    expect(JSON.parse(localStorage.getItem("taskList")).length).toBe(1);
+    expect(JSON.parse(localStorage.getItem('taskList')).length).toBe(1);
   });
 });
