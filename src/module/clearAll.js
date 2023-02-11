@@ -1,1 +1,3 @@
-export default (tasks) => tasks.filter((task) => !task.completed);
+export default function clear() {
+  (tasks) => tasks.filter((task) => !task.completed);
+}
