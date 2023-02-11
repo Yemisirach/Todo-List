@@ -1,111 +1,42 @@
-# Todo-List
+# To-Do-list.
 
-<a name="readme-top"></a>
+### Objectives of this project
+-test by using jest library
+- Use webpack to bundle JavaScript.
+- Learn how to use proper ES6 syntax.
+- Use ES6 modules to write modular JavaScript.
 
-<div align="center">
 
-</div>
+## Built With
 
-<!-- TABLE OF CONTENTS -->
+- HTML
+- CSS
+- JavaScript(ES6)
+- WebPack
 
-# 📗 Table of Contents
+## Live Demo
 
-- [Todo-List](#todo-list)
-- [📗 Table of Contents](#-table-of-contents)
-  - [This project goes live here 🚀 .](#this-project-goes-live-here--)
-- [📖 \[To Do List\] ](#-to-do-list-)
-  - [🛠 Built With ](#-built-with-)
-  - [💻 Getting Started ](#-getting-started-)
-    - [Prerequisites](#prerequisites)
-    - [Setup](#setup)
-    - [Usage](#usage)
-  - [👥 Yemisirach and Kingno3l](#-yemisirach-and-kingno3l)
-  - [🔭 Future Features ](#-future-features-)
-  - [⭐️ Show your support ](#️-show-your-support-)
-  - [🙏 Acknowledgments ](#-acknowledgments-)
-  - [📝 License ](#-license-)
+[Go Live](https://yemisirach.github.io/Todo-List/dist/) 
 
-<br>
+## Getting Started
 
-<!-- DEPLOYMENT -->
+1. Open [main branch](https://github.com/Yemisirach/Todo-List.git)
+2. Open VSCode or terminal and navigate to the folder where you would like to clone the project.
+3. Type "pwd" to see your working directory.
+4. [clone repository](git@github.com:Yemisirach/Todo-List.git)(git clone "branch-link")
+5. run "npm start" to start the website on local server
+6. Enjoy 😎
 
-### This project goes live [here](https://yemisirach.github.io/Todo-List/dist/) 🚀 .
+## Authors
 
-<br>
-
-<!-- DEPLOYMENT -->
-<!-- ### Have a look at the project's video presentation [here](https://www.loom.com/share/1f7de2b9345a4d3988c6327952899d30) 📽️ . -->
-
-<br>
-
-<!-- PROJECT DESCRIPTION -->
-
-# 📖 [To Do List Test] <a name="about-project"></a>
-
-**To do list** is a pair programming project for todolist test by using jest library.
-
-## 🛠 Built With <a name="built-with"></a>
-
--Client
-##Create a to do list
-
-- **HTML**
-- **CSS**
-- **JavaScript**
-
-<a href="https://yemisirach.github.io/Todo-List/dist/">Live Demo link</a>
-
-<!-- GETTING STARTED -->
-
-## 💻 Getting Started <a name="getting-started"></a>
-
-To get a local copy up and running, follow these steps.
-
-### Prerequisites
-
-In order to run this project you need to copy the link of this Repository.
-
-```sh
- https://github.com/Yemisirach/Todo-lis.git
-```
-
-<br>
-
-### Setup
-
-Clone this repository to your desired directory using the command:
-
-```sh
-  cd your-folder
-  git clone https://github.com/Yemisirach/Todo-list.git
-```
-
-<br>
-
-### Usage
-
-Kindly go ahead and give this project a massage but do not forget to give a detailed description in your pull request.
-
-<!--
-Example command:
-
-```sh
-  rails server
-```
---->
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- AUTHORS -->
-
-## 👥 Yemisirach and Kingno3l
+## 👥 Yemisirach and Kingno
 
 - GitHub: [@githubhandle](https://github.com/Yemisirach)
 - Twitter: [@twitterhandle](https://twitter.com/TamiratYemisrach)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/yemisirach)
 
 - GitHub: [@githubhandle](https://github.com/kingno3l)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/kingno3l)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/kingno3l
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -115,25 +46,14 @@ Example command:
 - [ ] **[Multi Pages]**
 - [ ] **[Server Storage]**
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## Show your support
 
-<!-- SUPPORT -->
+Give a ⭐️ if you like this project!
 
-## ⭐️ Show your support <a name="support"></a>
+## Acknowledgments
 
-If you like this project kindly support by suggesting changed by forking and pull requests
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- ACKNOWLEDGEMENTS -->
-
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-We would like to thank everyone who inspired us to learn programming. Regards to the whole Microverse team, Peers, and family supporting.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LICENSE -->
+- Microverse for amusing support and guidance.
+- Microverse code reviewers.
 
 ## 📝 License <a name="license"></a>
 
