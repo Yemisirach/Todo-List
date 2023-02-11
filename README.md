@@ -4,7 +4,6 @@
 
 <div align="center">
 
-
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -13,7 +12,7 @@
 
 - [Todo-List](#todo-list)
 - [📗 Table of Contents](#-table-of-contents)
-    - [This project goes live here 🚀 .](#this-project-goes-live-here--)
+  - [This project goes live here 🚀 .](#this-project-goes-live-here--)
 - [📖 \[To Do List\] ](#-to-do-list-)
   - [🛠 Built With ](#-built-with-)
   - [💻 Getting Started ](#-getting-started-)
@@ -41,9 +40,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [To Do List] <a name="about-project"></a>
+# 📖 [To Do List Test] <a name="about-project"></a>
 
-**To do list** is a pair programming project for saving book details like an online library.
+**To do list** is a pair programming project for todolist test by using jest library.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -131,8 +130,6 @@ If you like this project kindly support by suggesting changed by forking and pul
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 We would like to thank everyone who inspired us to learn programming. Regards to the whole Microverse team, Peers, and family supporting.
-
-<!-- <br>A massive Thank You to [Cindy Shin](https://www.behance.net/adagio07) who is the original designer of this [design](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
