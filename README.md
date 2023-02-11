@@ -1,10 +1,11 @@
 # To-Do-list.
 
 ### Objectives of this project
-
+-test by using jest library
 - Use webpack to bundle JavaScript.
 - Learn how to use proper ES6 syntax.
 - Use ES6 modules to write modular JavaScript.
+
 
 ## Built With
 
@@ -28,11 +29,14 @@
 
 ## Authors
 
-## 👥 Yemisirach
+## 👥 Yemisirach and Kingno
 
 - GitHub: [@githubhandle](https://github.com/Yemisirach)
 - Twitter: [@twitterhandle](https://twitter.com/TamiratYemisrach)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/yemisirach)
+
+- GitHub: [@githubhandle](https://github.com/kingno3l)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/kingno3l
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
