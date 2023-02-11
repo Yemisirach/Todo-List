@@ -2,6 +2,7 @@ import indexModule from '../src/index.js';
 
 const { handleAddTask } = indexModule;
 const { dom } = indexModule;
+const { clearCompleted } = indexModule;
 
 document.body.innerHTML = `<body>
 <section id="outer-cont">
@@ -25,6 +26,7 @@ document.body.innerHTML = `<body>
   </div>
 </section>
 </body>`;
+
 describe('Add task list and local Storage', () => {
   dom();
   test('check local Storage is null', () => {
@@ -77,5 +79,11 @@ describe('DOM for Add and delete task', () => {
     deleteButton = tasks.querySelector('.uil-trash');
     deleteButton.click();
     expect(JSON.parse(localStorage.getItem('taskList')).length).toBe(1);
+  });
+});
+
+describe('clear All Completed task', () => {
+  test('clearAllCompleted should be exist ', () => {
+    expect(clearCompleted).toBeDefined();
   });
 });
